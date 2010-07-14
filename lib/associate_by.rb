@@ -23,7 +23,6 @@ module AssociateBy
 
         # If the object doesn't exist and the parameter create is true, then create it
         if object.nil? && self.send("#{association.to_s.singularize}_#{method}_create?")
-          Rails.logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAA")
           object = association.to_s.singularize.camelize.constantize.create({"#{method}" => self.send("#{association.to_s.singularize}_#{method}")})
         end
 
