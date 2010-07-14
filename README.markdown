@@ -14,13 +14,15 @@ Example:
 
 You could assign a Product to a Category using the product name
 
+*WARNING: This gem only works with Rails 3. It might work with Rails 2, but I haven't tried it.*
+
 ## Instalation
 
 ### Rails 3
 
 Add the gem to your Gemfile
 
-    gem 'associate_by'
+    gem 'associate_by', '>=0.1.1'
 
 Install using bundle
 
