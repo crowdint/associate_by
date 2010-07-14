@@ -123,9 +123,11 @@ This plays very well with a form, specially for create situations.
       f.text_field :category_name
       f.submit 'Create'
 
-Pour some [autocomplete into the mix](http://github.com/crowdint/rails3-jquery-autocomplete) and you will end up with an easier way to handle your catalogs.
+Pour some [autocomplete into the mix](http://github.com/crowdint/rails3-jquery-autocomplete) and you will end up with a very easy way to fill your catalogs.
 
 ## Todo
 
 * Handle errors via Rails, for example, when the associated object doesn't exist and :create => false
+* The writer for the x-to-many associations can receive an array like: category.products = ["Product 1", "Product 2", "Product 3"]
+* Make it more semantic, like: associate_with :product, :by => :name
 * Finish this document
